@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Cspcwiczenia
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] tab = new int[10];
+            for (int i = 0; i < tab.Length; i++)
+            {
+                tab[i] = i + 1;
+            }
+            Console.WriteLine("ZawartoĂÊ tablicy:");
+            for (int i = 0; i < tab.Length; i++)
+            {
+                Console.WriteLine("tab[{0}] = {1}", i, tab[i]);
+                // w C# 6.0 moĪna równieĪ tak
+                Console.WriteLine("C# 6.0");
+                Console.WriteLine($"tab[{i}] = {tab[i]}");
+            }
+            Console.ReadLine();
+        }
+    }
+}
