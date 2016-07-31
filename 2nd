@@ -1,0 +1,36 @@
+using System;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1 zadanie z napiwkiem
+            ////wczytywanie
+            //float mealCost = Convert.ToSingle(Console.ReadLine());
+            //int tipPercent = Convert.ToInt32(Console.ReadLine());
+            //int taxPercent = Convert.ToInt32(Console.ReadLine());
+            ////obliczenia 
+            //float tip = mealCost * tipPercent / 100;
+            //Console.WriteLine("Tip: {0}", tip);
+            //float tax = mealCost * taxPercent / 100;
+            //Console.WriteLine("Tax: {0}", tax);
+            //float totalCost = mealCost + tip + tax;
+            ////wynik
+            //Console.WriteLine("The total meat cost is: {0}", Math.Round((decimal)totalCost,0,MidpointRounding.AwayFromZero));
+            //Console.ReadLine();
+            ////2 zadanie (parzysta/nieparzysta i wtedy dziwna/nie dziwna)
+            byte n = Convert.ToByte(Console.ReadLine());
+            if(n>=1 && n <= 100)
+            {
+                if (n % 2 == 1) Console.WriteLine("Weird");
+                else if (n >= 2 && n <=5) Console.WriteLine("Not Weird");
+                else if (n >= 6 && n <= 20) Console.WriteLine("Weird");
+                else Console.WriteLine("Not Weird");
+            } 
+
+            Console.ReadLine();
+        }
+    }
+}
